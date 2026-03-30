@@ -1,4 +1,6 @@
-当前目录/
+# 克隆项目到本地
+git clone https://github.com/sansan0/TrendRadar.git
+cd TrendRadar当前目录/
 ├── config/
 │   ├── config.yaml                 # 核心功能配置（必需）
 │   ├── frequency_words.txt         # 关键词配置（必需）
@@ -15,4 +17,8 @@
 │       └── keyword/                # 自定义关键词文件
 └── docker/
     ├── .env                        # 敏感信息 + Docker 特有配置
-    └── docker-compose.yml          # Docker Compose 编排文件
+    └── docker-compose.yml          # Docker Compose 编排文件# 拉取最新镜像
+docker compose pull
+
+# 启动所有服务（trendradar + trendradar-mcp）
+docker compose up -d
