@@ -1,0 +1,18 @@
+当前目录/
+├── config/
+│   ├── config.yaml                 # 核心功能配置（必需）
+│   ├── frequency_words.txt         # 关键词配置（必需）
+│   ├── timeline.yaml               # 时间线配置
+│   ├── ai_analysis_prompt.txt      # AI 分析提示词（可选）
+│   ├── ai_translation_prompt.txt   # AI 翻译提示词（可选）
+│   ├── ai_interests.txt            # AI 兴趣过滤配置（可选）
+│   ├── ai_filter/                  # AI 过滤相关提示词
+│   │   ├── prompt.txt
+│   │   ├── extract_prompt.txt
+│   │   └── update_tags_prompt.txt
+│   └── custom/                     # 用户自定义配置（可选）
+│       ├── ai/                     # 自定义 AI 提示词
+│       └── keyword/                # 自定义关键词文件
+└── docker/
+    ├── .env                        # 敏感信息 + Docker 特有配置
+    └── docker-compose.yml          # Docker Compose 编排文件
